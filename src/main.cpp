@@ -6,9 +6,10 @@ int main() {
 	std::cout << "Please input the base number: ";
 	std::cin >> base_number;
 
-	for (int i = 1, counter = 1; i <= (base_number / 2); i++, counter++) {
+	for (int i = 1, counter = 1; i <= (base_number / 2); i++) {
 		if (base_number % i == 0) {
 			std::cout << "Factor Pair " << counter << ": [" << i << "," << base_number / i << "]\n";
+			counter++;
 		}
 	}
 
