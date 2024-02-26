@@ -7,7 +7,7 @@ int main() {
 	std::cin >> base_number;
 
 	for (int i = 1, counter = 1; i <= (base_number / 2); i++, counter++) {
-		if (base_number / i) {
+		if (base_number % i == 0) {
 			std::cout << "Factor Pair " << counter << ": [" << i << "," << base_number / i << "]\n";
 		}
 	}
